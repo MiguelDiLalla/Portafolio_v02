@@ -125,4 +125,18 @@ This is a personal project, but external contributions, issues, and suggestions 
 
 ## 📄 License
 
-This project is currently unlicensed and for personal/professional showcase purposes only.
+### Code License
+
+The source code of this project is licensed under the [MIT License](./LICENSE). You are free to use, modify, and distribute the code according to the terms of the MIT License.
+
+### Non-Code Assets License
+
+**Non-code assets** (including images, artwork, written content, design materials, and portfolio content) are **© 2025 Miguel Di Lalla** and are **NOT** licensed under MIT. These assets are provided for viewing and reference purposes only.
+
+**Commercial reuse, redistribution, or derivative works of non-code assets require explicit written permission** from Miguel Di Lalla.
+
+### Third-Party Assets
+
+For a complete list of third-party assets and their respective licenses, see [Attributions.md](./src/Attributions.md).
+
+---

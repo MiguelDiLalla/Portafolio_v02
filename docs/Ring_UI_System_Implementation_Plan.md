@@ -5,6 +5,7 @@
 **Goal**: Create a full-screen overlay system for detailed content viewing that sits above the ring interface.
 
 ### Files/Modules to Create or Update:
+
 - `src/frames/AltFrame.tsx` - Main AltFrame component
 - `src/frames/components/MiniNav.tsx` - Navigation header for AltFrame
 - Global state management for AltFrame visibility
@@ -12,7 +13,7 @@
 
 ### Development Tasks:
 
-- [ ] **Implement AltFrame component**:
+- [x] **Implement AltFrame component**:
   - **Structure**: Cover the whole viewport (position fixed, z-index above ring and nav)
   - Use a full-screen div or modal approach
   - Include a content area (placeholder or route outlet for different pages)
@@ -25,32 +26,32 @@
   - Content can initially be static placeholder ("Content goes here...")
   - Future: integrate with routing scheme (React Router to mount AltFrame for certain routes)
 
-- [ ] **Triggering AltFrame**:
+- [x] **Triggering AltFrame**:
   - Clicking a content item in a ring (not placeholder) should open its details in AltFrame
   - Example: item in "Work" ring representing a project opens detailed project view
   - Implement `onClick` in `RingItem` for `kind: 'content'` items designated to open AltFrame
   - `onClick` sets global state `isAltFrameActive = true` and stores `activeContentId`
   - Alternative: use routes where `onClick` navigates to new route triggering AltFrame
 
-- [ ] **Global State Handling**:
+- [x] **Global State Handling**:
   - Add `isAltFrameActive` and `altContent` info to global context/App state
   - When true, render `<AltFrame />` component above rest of app (conditionally in App.tsx)
   - Underlying RingView and Nav remain but should be inert
   - Optional enhancement: dim or blur background, apply scale-down effect to ring behind AltFrame
 
-- [ ] **Back Navigation**:
+- [x] **Back Navigation**:
   - When user clicks back button in AltFrame's mini-nav:
     - Set `isAltFrameActive = false` to hide AltFrame
     - Restore any paused/altered background state
     - Resume ring animations if paused
     - Return focus to ring item that launched AltFrame (accessibility)
 
-- [ ] **Behavior and Style**:
+- [x] **Behavior and Style**:
   - AltFrame acts like separate page - no ring motion inside
   - Hide SidePanel/Dock when AltFrame is active (or cover with higher z-index)
   - Prevent user clicking another ring behind AltFrame
 
-- [ ] **Animation**:
+- [x] **Animation**:
   - Use Framer Motion to animate AltFrame appearance (fade/slide from bottom)
   - Animate out when closing (fade out)
   - Keep animations short (~300ms)
@@ -79,6 +80,7 @@
 **Goal**: Create a system to manage dynamic backgrounds for each ring, enhancing visual appeal without interfering with content.
 
 ### Files/Modules to Create or Update:
+
 - `src/rings/engine/BackgroundController.tsx` - Component/utility for background orchestration
 - `rings.json` - Contains background config (already exists)
 - CSS/assets for specific backgrounds
@@ -141,6 +143,7 @@
 **Goal**: Make the ring UI system accessible for all users, including keyboard-only navigation, assistive technologies, and reduced motion preferences.
 
 ### Files/Modules to Create or Update:
+
 - Keyboard input handling in InputMapper or global event handlers
 - Focus management in RingView/Nav components
 - ARIA attributes in JSX (no new files, modify existing)
@@ -261,6 +264,7 @@
 **Goal**: Enhance developer experience with hooks for key events and debug interface for observing system behavior.
 
 ### Files/Modules to Create or Update:
+
 - Event hooks in RingEngine or global context
 - `src/components/dev/DebugPanel.tsx` - Debug panel overlay
 - Integration in app (dev-only rendering)

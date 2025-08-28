@@ -6,6 +6,7 @@ interface AltContent {
 
   title?: string;
 
+
   node: ReactNode;
 }
 

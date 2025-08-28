@@ -6,5 +6,6 @@ import { UIProvider } from './contexts/UIContext';
 createRoot(document.getElementById('root')!).render(
   <UIProvider>
     <App />
+
   </UIProvider>
 );

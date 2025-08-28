@@ -89,7 +89,7 @@
 
 ### Development Tasks:
 
-- [ ] **Implement BackgroundController component**:
+- [x] **Implement BackgroundController component**:
   - Render single full-viewport background element (`<div id="background-layer">`)
   - Absolutely positioned (`inset-0`) behind all content (z-index below ring content)
   - Mount once (in App) and listen to `activeRingId` and ring progress changes
@@ -105,7 +105,7 @@
     - Video: seek according to progress (advanced)
     - Simple initial implementation: log "followsIndex" and plan effects
 
-- [ ] **State Management**:
+- [x] **State Management**:
   - Subscribe to `activeRingId` changes and `ringIndexProgress` updates
   - Use hooks or context for ring state
   - Consider throttling `onBackgroundTick(progress)` to ~30fps

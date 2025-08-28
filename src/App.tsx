@@ -10,6 +10,7 @@ import { SettingsPage } from './components/pages/SettingsPage';
 import { AltFrame } from './frames/AltFrame';
 import { useUI } from './contexts/UIContext';
 
+
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [isMobile, setIsMobile] = useState(false);
@@ -41,6 +42,7 @@ export default function App() {
 
   return (
     <div className="w-screen h-screen bg-background text-foreground overflow-hidden relative">
+      <BackgroundController />
       {/* Main content area - no padding so content flows behind navigation */}
       <main className="w-full h-full relative">{renderCurrentPage()}</main>
 

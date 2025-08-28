@@ -13,7 +13,6 @@ export function AltFrame() {
 
   const { isAltFrameActive, altContent } = useUI();
 
-
   return (
     <AnimatePresence>
       {isAltFrameActive && (

@@ -1,0 +1,16 @@
+{
+  "ringOrder": ["landing", "work"],
+  "rings": {
+    "landing": {
+      "name": "Landing",
+      "background": { "mode": "color", "config": { "color": "#0d1117" } }
+    },
+    "work": {
+      "name": "Work",
+      "background": {
+        "mode": "gradient",
+        "config": { "from": "#1e3a8a", "to": "#9333ea", "angle": 45 }
+      }
+    }
+  }
+}

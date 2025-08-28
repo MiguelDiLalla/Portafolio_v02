@@ -1,5 +1,6 @@
 'use client';
 
+
 import { motion, AnimatePresence } from 'framer-motion';
 import { useUI } from '../contexts/UIContext';
 import { MiniNav } from './components/MiniNav';
@@ -9,12 +10,15 @@ import { MiniNav } from './components/MiniNav';
  * It appears above the ring interface with a mini navigation bar.
  */
 export function AltFrame() {
+
   const { isAltFrameActive, altContent } = useUI();
+
 
   return (
     <AnimatePresence>
       {isAltFrameActive && (
         <motion.div
+
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 40 }}

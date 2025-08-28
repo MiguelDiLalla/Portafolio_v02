@@ -3,13 +3,16 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
 
 interface AltContent {
+
   title?: string;
+
   node: ReactNode;
 }
 
 interface UIContextValue {
   isAltFrameActive: boolean;
   altContent: AltContent | null;
+
   openAltFrame: (content: AltContent) => void;
   closeAltFrame: () => void;
 }

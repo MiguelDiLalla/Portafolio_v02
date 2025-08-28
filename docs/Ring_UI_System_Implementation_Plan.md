@@ -57,23 +57,25 @@
   - Keep animations short (~300ms)
   - Respect reduced-motion (instantly show/hide if motion is reduced)
 
-- [ ] **Testing AltFrame**:
+- [x] **Testing AltFrame**:
   - Simulate clicking ring item designated to open alt content
   - Verify AltFrame appears with expected content/placeholder
   - Click back button, ensure AltFrame disappears and ring UI is interactive again
   - Check main nav is hidden/non-functional while in AltFrame
   - Ensure toggling AltFrame doesn't reset ring state unexpectedly
 
-- [ ] **Extensibility**:
+- [x] **Extensibility**:
   - Document how AltFrame could be used for multiple content pages
   - Consider `altFrameType` or loading different components based on trigger
   - Design for generic reusability
+  - `openAltFrame` now accepts a `type` field to differentiate content handlers
 
-- [ ] **Accessibility**:
+- [x] **Accessibility**:
   - AltFrame mini-nav should be keyboard accessible
   - Back button focusable with aria-label "Go back"
   - Consider focus trapping within AltFrame (like modal)
   - Restore focus to last focused element when closed
+  - Trap focus within AltFrame and close on `Escape`, restoring prior focus
 
 ## Background Effects & Controller
 

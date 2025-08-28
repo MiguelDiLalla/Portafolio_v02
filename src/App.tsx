@@ -9,7 +9,7 @@ import { ContactPage } from './components/pages/ContactPage';
 import { SettingsPage } from './components/pages/SettingsPage';
 import { AltFrame } from './frames/AltFrame';
 import { useUI } from './contexts/UIContext';
-import { BackgroundController } from './rings/engine/BackgroundController';
+
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');

@@ -19,7 +19,7 @@ export function MiniNav({ title }: MiniNavProps) {
   return (
     <FrostedPanel className="flex items-center gap-2 p-4 h-14">
       <button
-        type="button"
+
         onClick={closeAltFrame}
         className="flex items-center gap-1 text-sm"
         aria-label="Go back"

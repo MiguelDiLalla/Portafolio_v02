@@ -3,18 +3,16 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
 
 interface AltContent {
-  /** Optional type identifier for routing different content components */
-  type?: string;
-  /** Optional title displayed in AltFrame's navigation */
+
   title?: string;
-  /** React node rendered inside the AltFrame */
+
   node: ReactNode;
 }
 
 interface UIContextValue {
   isAltFrameActive: boolean;
   altContent: AltContent | null;
-  /** Open the AltFrame with provided content */
+
   openAltFrame: (content: AltContent) => void;
   closeAltFrame: () => void;
 }

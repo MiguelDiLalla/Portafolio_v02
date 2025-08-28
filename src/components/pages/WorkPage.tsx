@@ -78,7 +78,7 @@ export function WorkPage() {
                 className="aspect-video bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 cursor-pointer"
                 onClick={() =>
                   openAltFrame({
-                    type: 'project',
+
                     title: project.title,
                     node: (
                       <div>
